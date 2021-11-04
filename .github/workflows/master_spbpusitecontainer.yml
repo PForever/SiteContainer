@@ -27,7 +27,7 @@ jobs:
 
       - name: dotnet publish
         #run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
-        run: xcopy . "${{env.DOTNET_ROOT}}\myapp" /Y /C /R /S
+        run: xcopy . "${{env.DOTNET_ROOT}}\myapp" /I /Y /C /R /S
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
