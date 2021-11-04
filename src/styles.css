@@ -14,10 +14,19 @@ main {
   padding: 10px;
   height: 100vh;
   width: 100vw;
+}
+
+.with-sidebar {
   display: grid;
   grid-template: "h h" 100px
-                 "s c" 1fr
+                 "s c" 1fr 
                  "s c" 1fr / 200px 1fr;
+}
+.without-sidebar {
+  display: grid;
+  grid-template: "h h" 100px
+                 "c c" 1fr
+                 "c c" 1fr / 1fr 1fr;
 }
 .data-content{
   padding: 5px;
@@ -76,7 +85,7 @@ main {
 }
 
 .header{
-  background-color: green;
+  background: linear-gradient(rgb(5, 78, 5), rgb(102, 211, 102), rgb(5, 78, 5));
   height: 100px;
   grid-area: h;
 }
