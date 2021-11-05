@@ -1,5 +1,5 @@
 {
-    "liveServer.settings.port": 5775,
+    "liveServer.settings.port": 5782,
     "github-actions.workflows.pinned.workflows": [
         ".github/workflows/master_spbpusitecontainer.yml"
     ]

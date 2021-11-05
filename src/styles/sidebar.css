@@ -17,6 +17,7 @@
     padding: 7px;
     height: 30px;
     background-color: rgb(89, 89, 94);
+    transition: width 250ms ease-in-out;
   }
   
   .sidebar-btn:hover {
@@ -28,8 +29,9 @@
   }
   
   .sidebar-chk:checked + .sidebar-btn {
-    width: 10px;
+    width: 30px;
     color:transparent;
+    transition: width 250ms ease-in-out;
   }
   
   .sidebar-chk:checked ~ .sidebar-item{
@@ -48,7 +50,7 @@
   
   .sidebar-item_inner{
     margin-top: 5px;
-    margin-left: 15px;
+    margin-left: calc(15px + 15px);
     padding: 7px;
     height: 30px;
     background-color: rgb(32, 105, 241);
