@@ -2,4 +2,5 @@
     background: linear-gradient(rgb(91, 133, 189), rgb(238, 206, 146),rgb(216, 105, 0));
     height: 100px;
     grid-area: h;
+    font: 1.2em "Fira Sans", serif;
   }
