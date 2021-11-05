@@ -1,0 +1,5 @@
+.header {
+    background: linear-gradient(rgb(5, 78, 5), rgb(102, 211, 102), rgb(5, 78, 5));
+    height: 100px;
+    grid-area: h;
+  }

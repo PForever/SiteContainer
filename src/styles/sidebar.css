@@ -1,0 +1,55 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    grid-area: s;
+    background-color: yellow;
+  }
+  
+  .sidebar-chk {
+    display: none;
+  }
+  
+  .sidebar-btn {
+    width: 200px;
+    margin-top: 5px;
+    padding: 7px;
+    height: 30px;
+    background-color: rgb(89, 89, 94);
+  }
+  
+  .sidebar-btn:hover {
+    background-color: gray;
+  }
+  
+  .sidebar-btn:active {
+    background-color: rgb(209, 209, 209);
+  }
+  
+  .sidebar-chk:checked + .sidebar-btn {
+    width: 10px;
+    color:transparent;
+  }
+  
+  .sidebar-chk:checked ~ .sidebar-item{
+    display: none;
+  }
+  .sidebar-chk:checked ~ .sidebar-item_inner{
+    display: none;
+  }
+  
+  .sidebar-item{
+    margin-top: 5px;
+    padding: 7px;
+    height: 30px;
+    background-color: blue;
+  }
+  
+  .sidebar-item_inner{
+    margin-top: 5px;
+    margin-left: 15px;
+    padding: 7px;
+    height: 30px;
+    background-color: rgb(32, 105, 241);
+  }

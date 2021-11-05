@@ -1,0 +1,25 @@
+.data-content {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .data-item {
+    min-width: 200px;
+    margin: 10px;
+    background-color: tomato;
+    height: 200px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    grid-area: c;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
