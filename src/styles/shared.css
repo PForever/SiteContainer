@@ -1,6 +1,44 @@
-.text-center { 
+  .text-center { 
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+  }
+
+  .btn-circl {
+    text-decoration: none;
+    font: 1.2em "Fira Sans", sans-serif;
+    color: rgb(248, 248, 248);
+    background-color: rgb(255, 255, 255);
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid rgb(209, 209, 209) ;
+    border-right: 1px solid rgb(48, 48, 48) ;
+    border-bottom: 1px solid rgb(48, 48, 48);
+    border-left: 1px solid rgb(209, 209, 209) ;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .btn-circl:link{
+    text-decoration: none;
+    color: inherit;
+  }
+  .btn-circl:visited{
+    text-decoration: none;
+    color: inherit;
+  }
+  .btn-circl:hover{
+    text-decoration: none;
+    background-color: rgb(211, 186, 0);
+  }
+  .btn-circl:active{
+    text-decoration: none;
+    background-color: rgb(209, 209, 209);
+  }
+  .content-header{
+    text-align: center;
+    font: 1.5em "Fira Sans", sans-serif;
+  }
+
+  .page-header{
     text-align: center;
   }

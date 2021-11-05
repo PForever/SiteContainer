@@ -74,12 +74,14 @@
     background-color: rgb(238, 206, 146);
     border-radius: 3px;
   }
-  
+  .sidebar-item:link{
+    text-decoration: none;
+    color: inherit;
+  }
   .sidebar-item:visited{
     text-decoration: none;
     color: inherit;
   }
-
   .sidebar-item:hover {
     text-decoration: none;
     background-color: rgb(211, 186, 0);
@@ -109,7 +111,7 @@
   }
   
   .sidebar-btn:hover {
-    background-color: rgb(211, 137, 0);
+    background-color: rgb(211, 186, 0);
   }
   
   .sidebar-btn:active {
@@ -131,19 +133,19 @@
 
   .sidebar-item-group-btn {
     text-decoration: none;
-    background-color: rgb(23, 165, 208);
+    background-color: rgb(240, 240, 240);
     padding: 2px 6px 2px 6px;
     border-top: 1px solid rgb(209, 209, 209) ;
     border-right: 1px solid rgb(48, 48, 48) ;
     border-bottom: 1px solid rgb(48, 48, 48);
     border-left: 1px solid rgb(209, 209, 209) ;
     border-radius: 20px;
+    color: rgb(170, 41, 41);
   }
-  .sidebar-item-group-btn:visited{
+  .sidebar-item-group-btn:link{
     text-decoration: none;
     color: inherit;
   }
-  
   .sidebar-item-group-btn:hover{
     background-color: rgb(211, 186, 0);
   }

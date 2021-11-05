@@ -13,14 +13,20 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
   }
   
   .data-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    padding: 0px 5px 5px 5px;
+
     min-width: 200px;
     margin: 10px;
     /* background: linear-gradient(rgb(91, 133, 189), rgb(238, 206, 146)); */
     background: radial-gradient(rgb(238, 206, 146),rgb(91, 133, 189));
-    height: 200px;
+    min-height: 200px;
   }
