@@ -20,6 +20,7 @@
   .data-item {
     min-width: 200px;
     margin: 10px;
-    background-color: tomato;
+    /* background: linear-gradient(rgb(91, 133, 189), rgb(238, 206, 146)); */
+    background: radial-gradient(rgb(238, 206, 146),rgb(91, 133, 189));
     height: 200px;
   }

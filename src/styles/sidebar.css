@@ -4,28 +4,116 @@
     justify-content: start;
     align-items: stretch;
     grid-area: s;
-    background-color: yellow;
+    background-color: rgb(216, 105, 0);
+    padding: 0px 5px 0px 5px;
+    overflow: scroll;
+  }
+
+  .sidebar::-webkit-scrollbar{
+    display: none;
+  }
+
+/* menu items */
+
+  .sidebar-item-header-chk{
+    display: none;
+  }
+
+  .sidebar-item-header{
+    user-select: none;
+    display: block;
+    margin-top: 5px;
+    padding: 7px;
+    height: 30px;
+    background-color: rgb(170, 41, 41);
+    color:honeydew;
+    border-radius: 3px;
+  }
+
+  .sidebar-item-header:hover {
+    background-color: rgb(204, 48, 48);
   }
   
+  .sidebar-item-header:active {
+    background-color: rgb(209, 209, 209);
+  }
+
+
+  .sidebar-item-group{
+    margin-left: 15px;
+    position: relative;
+  }
+ /* there is peace da over here */
+  .sidebar-item-header-chk:checked + .sidebar-item-header + .sidebar-item-group{
+    display: none;
+    /* max-height: 0px;
+    transition: max-height 250ms ease-in-out; */
+    /* animation: folding-animate ease-in-out 0.5s forwards; */
+  }
+
+  @keyframes folding-animate {
+    0% {
+      max-height: 50%;
+      min-height: 50%;
+    }
+    100% {
+      max-height: 0px;
+      min-height: 0%;
+      transform: translateY(-50%) scaleY(0);
+    }
+  }
+
+
+  .sidebar-item{
+    text-decoration: none;
+    display: block;
+    user-select: none;
+    margin-top: 5px;
+    padding: 7px;
+    height: 30px;
+    background-color: rgb(238, 206, 146);
+    border-radius: 3px;
+  }
+  
+  .sidebar-item:visited{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .sidebar-item:hover {
+    text-decoration: none;
+    background-color: rgb(211, 186, 0);
+  }
+  
+  .sidebar-item:active {
+    background-color: rgb(199, 198, 198);
+  }
+
+  /* menu buttom */
+
   .sidebar-chk {
     display: none;
   }
   
   .sidebar-btn {
+    color: white;
+    text-align: center;
+    user-select: none;
     width: 200px;
     margin-top: 5px;
     padding: 7px;
     height: 30px;
-    background-color: rgb(89, 89, 94);
+    background-color: rgb(211, 186, 0);
     transition: width 250ms ease-in-out;
+    border-radius: 3px;
   }
   
   .sidebar-btn:hover {
-    background-color: gray;
+    background-color: rgb(211, 137, 0);
   }
   
   .sidebar-btn:active {
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(199, 198, 198);
   }
   
   .sidebar-chk:checked + .sidebar-btn {
@@ -34,24 +122,34 @@
     transition: width 250ms ease-in-out;
   }
   
-  .sidebar-chk:checked ~ .sidebar-item{
+  .sidebar-chk:checked ~ .sidebar-item-header{
     display: none;
   }
-  .sidebar-chk:checked ~ .sidebar-item_inner{
+  .sidebar-chk:checked ~ .sidebar-item-group{
     display: none;
   }
-  
-  .sidebar-item{
-    margin-top: 5px;
-    padding: 7px;
-    height: 30px;
-    background-color: blue;
+
+  .sidebar-item-group-btn {
+    text-decoration: none;
+    background-color: rgb(23, 165, 208);
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid rgb(209, 209, 209) ;
+    border-right: 1px solid rgb(48, 48, 48) ;
+    border-bottom: 1px solid rgb(48, 48, 48);
+    border-left: 1px solid rgb(209, 209, 209) ;
+    border-radius: 20px;
+  }
+  .sidebar-item-group-btn:visited{
+    text-decoration: none;
+    color: inherit;
   }
   
-  .sidebar-item_inner{
-    margin-top: 5px;
-    margin-left: calc(15px + 15px);
-    padding: 7px;
-    height: 30px;
-    background-color: rgb(32, 105, 241);
+  .sidebar-item-group-btn:hover{
+    background-color: rgb(211, 186, 0);
+  }
+  .sidebar-item-group-btn:active{
+    background-color: rgb(209, 209, 209);
+  }
+  .current{
+    background-color: rgb(211, 186, 0);
   }
