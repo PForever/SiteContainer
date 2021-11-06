@@ -6,6 +6,7 @@
     grid-area: c;
     overflow-x: hidden;
     overflow-y: auto;
+    background-color: rgb(112, 112, 112);
   }
 
   .data-content {
@@ -27,6 +28,11 @@
     min-width: 200px;
     margin: 10px;
     /* background: linear-gradient(rgb(91, 133, 189), rgb(238, 206, 146)); */
-    background: radial-gradient(rgb(238, 206, 146),rgb(91, 133, 189));
+    /* background: radial-gradient(rgb(187, 186, 186), rgb(51, 51, 51)); */
+    background: rgb(58, 58, 58);
+    border-radius: 10px;
+    border-color: rgb(150, 150, 150);
+    border-style: solid;
+    border-width: 2px;
     min-height: 200px;
   }

@@ -1,7 +1,9 @@
 .footer {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(80, 80, 80);
     height: 50px;
     text-align: center;
     min-height: 50px;
     font: 1.2em "Fira Sans", serif;
+    letter-spacing: 0.1em;
+    color: white;
   }

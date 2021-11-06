@@ -1,6 +1,8 @@
 .header {
-    background: linear-gradient(rgb(91, 133, 189), rgb(238, 206, 146),rgb(216, 105, 0));
+    background: linear-gradient(rgb(53, 53, 53), rgb(87, 86, 84),rgb(39, 39, 39));
     height: 100px;
     grid-area: h;
     font: 1.2em "Fira Sans", serif;
+    color: white;
+    letter-spacing: 0.7em;
   }

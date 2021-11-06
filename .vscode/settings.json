@@ -1,5 +1,6 @@
 {
-    "liveServer.settings.port": 5782,
+    "liveServer.settings.multiRootWorkspaceName": "",
+    "liveServer.settings.port": 0,
     "github-actions.workflows.pinned.workflows": [
         ".github/workflows/master_spbpusitecontainer.yml"
     ]

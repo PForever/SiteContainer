@@ -1,10 +1,17 @@
+@font-face {
+	font-family: "JuraDemiBold";
+	src: url("../fonts/jurademibold.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: stretch;
     grid-area: s;
-    background-color: rgb(216, 105, 0);
+    background-color: rgb(60, 60, 60);
     padding: 0px 5px 0px 5px;
     overflow: scroll;
   }
@@ -25,13 +32,13 @@
     margin-top: 5px;
     padding: 7px;
     height: 30px;
-    background-color: rgb(170, 41, 41);
+    background-color: rgb(153, 151, 151);
     color:honeydew;
     border-radius: 3px;
   }
 
   .sidebar-item-header:hover {
-    background-color: rgb(204, 48, 48);
+    background-color: rgb(141, 139, 137);
   }
   
   .sidebar-item-header:active {
@@ -65,14 +72,16 @@
 
 
   .sidebar-item{
+    font-family: "JuraDemiBold";
     text-decoration: none;
     display: block;
     user-select: none;
     margin-top: 5px;
     padding: 7px;
     height: 30px;
-    background-color: rgb(238, 206, 146);
+    background-color: rgb(255, 255, 255);
     border-radius: 3px;
+    text-align: center;
   }
   .sidebar-item:link{
     text-decoration: none;
@@ -84,7 +93,13 @@
   }
   .sidebar-item:hover {
     text-decoration: none;
-    background-color: rgb(211, 186, 0);
+    border-top: 1px solid rgb(209, 209, 209) ;
+    border-right: 1px solid rgb(48, 48, 48) ;
+    border-bottom: 1px solid rgb(48, 48, 48);
+    border-left: 1px solid rgb(209, 209, 209) ;
+    background: linear-gradient(to bottom right, rgb(218, 214, 214), rgb(29, 29, 29));
+    /* background-color: rgb(213, 95, 41); */
+    color: rgb(211, 211, 211);
   }
   
   .sidebar-item:active {
@@ -105,13 +120,15 @@
     margin-top: 5px;
     padding: 7px;
     height: 30px;
-    background-color: rgb(211, 186, 0);
+    /* background-color: rgb(51, 51, 51); */
+    background: radial-gradient(rgb(130, 130, 130), rgb(51, 51, 51));
+    /* background: linear-gradient(to left, rgb(130, 130, 130), rgb(51, 51, 51)); */
     transition: width 250ms ease-in-out;
     border-radius: 3px;
   }
   
   .sidebar-btn:hover {
-    background-color: rgb(211, 186, 0);
+    background: radial-gradient(rgb(187, 186, 186), rgb(51, 51, 51));
   }
   
   .sidebar-btn:active {
@@ -132,6 +149,7 @@
   }
 
   .sidebar-item-group-btn {
+    font-family: "JuraDemiBold";
     text-decoration: none;
     background-color: rgb(240, 240, 240);
     padding: 2px 6px 2px 6px;
@@ -140,18 +158,37 @@
     border-bottom: 1px solid rgb(48, 48, 48);
     border-left: 1px solid rgb(209, 209, 209) ;
     border-radius: 20px;
-    color: rgb(170, 41, 41);
+    color: rgb(56, 56, 56);
   }
   .sidebar-item-group-btn:link{
     text-decoration: none;
-    color: inherit;
   }
   .sidebar-item-group-btn:hover{
-    background-color: rgb(211, 186, 0);
+    border-top: 1px solid rgb(209, 209, 209) ;
+    border-right: 1px solid rgb(48, 48, 48) ;
+    border-bottom: 1px solid rgb(48, 48, 48);
+    border-left: 1px solid rgb(209, 209, 209) ;
+    background: linear-gradient(to bottom right, rgb(218, 214, 214), rgb(29, 29, 29));
+    /* background-color: rgb(213, 95, 41); */
+    color: rgb(211, 211, 211);
   }
   .sidebar-item-group-btn:active{
     background-color: rgb(209, 209, 209);
   }
   .current{
-    background-color: rgb(211, 186, 0);
+    border-top: 1px solid rgb(209, 209, 209) ;
+    border-right: 1px solid rgb(48, 48, 48) ;
+    border-bottom: 1px solid rgb(48, 48, 48);
+    border-left: 1px solid rgb(209, 209, 209) ;
+    background: linear-gradient(to bottom right, rgb(218, 214, 214), rgb(29, 29, 29));
+    /* background-color: rgb(213, 95, 41); */
+    color: rgb(211, 211, 211);
+  }
+  .current:link{
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+  }
+  .current:visited{
+    text-decoration: none;
+    color: rgb(211, 211, 211);
   }
