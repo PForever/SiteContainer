@@ -1,0 +1,42 @@
+.data-content {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+.picture-body{
+    position: absolute;
+    width: 100px; 
+    height: 150px;
+    background: radial-gradient(circle closest-corner at 50px 90px,rgb(255, 255, 255), rgb(72, 189, 205));
+    border-radius: 50px/75px;
+    z-index: 1;
+}
+.picture-hand-left, .picture-hand-right{
+    position: absolute;
+    width: 30px; 
+    height: 75px;
+    background: radial-gradient(circle closest-corner at 17px 50px,rgb(255, 255, 255), rgb(72, 189, 205));
+    border-radius: 50px/120px;
+    transform: rotate(-30deg) translate(30px, 40px)
+}
+.picture-hand-left{
+    transform: rotate(30deg) translate(-30px, 40px)
+}
+.picture-foot-left, .picture-foot-left{
+    position: absolute;
+    width: 3px; 
+    height: 75px;
+    transform: rotate(30deg) translate(20px, 60px);
+    background-color: rgb(61, 125, 163);;
+}
+
+.picture-finger-left-one{
+    position: absolute;
+    width: 3px; 
+    height: 75px;
+    transform: rotate(30deg) translate(20px, 60px);
+    background-color: rgb(61, 125, 163);
+}
