@@ -22,21 +22,97 @@
     border-radius: 50px/120px;
     transform: rotate(-30deg) translate(30px, 40px)
 }
+
 .picture-hand-left{
     transform: rotate(30deg) translate(-30px, 40px)
 }
-.picture-foot-left, .picture-foot-left{
+
+
+.picture-finger-right-two, .picture-finger-right-three, .picture-finger-right-one, .picture-foot-right, .picture-foot-left, .picture-finger-left-two, .picture-finger-left-three, .picture-finger-left-one{
     position: absolute;
-    width: 3px; 
-    height: 75px;
-    transform: rotate(30deg) translate(20px, 60px);
-    background-color: rgb(61, 125, 163);;
+    width: 3px;
+    background-color: rgb(61, 125, 163);
 }
 
-.picture-finger-left-one{
-    position: absolute;
-    width: 3px; 
+
+.picture-foot-left{
     height: 75px;
-    transform: rotate(30deg) translate(20px, 60px);
-    background-color: rgb(61, 125, 163);
+    transform: translate(-11px, 60px) rotate(20deg);
+}
+
+.picture-finger-left-two, .picture-finger-left-three, .picture-finger-left-one{
+    height: 20px;
+    transform: translate(-33px, 99px) rotate(60deg);
+}
+
+.picture-finger-left-two {
+    height: 15px;
+    transform: translate(-23px, 99px);
+}
+.picture-finger-left-three {
+    height: 17px;
+    transform: translate(-15px, 99px) rotate(-60deg);
+}
+
+.picture-foot-right{
+    height: 75px;
+    transform: translate(27px, 60px) rotate(20deg);
+}
+
+.picture-finger-right-two, .picture-finger-right-three, .picture-finger-right-one{
+    height: 20px;
+    transform: translate(6px, 99px) rotate(60deg);
+}
+
+.picture-finger-right-two {
+    height: 15px;
+    transform: translate(15px, 99px);
+}
+.picture-finger-right-three {
+    height: 17px;
+    transform: translate(22px, 99px) rotate(-60deg);
+}
+
+
+.eye-right, .eye-left {
+    position: absolute;
+    width: 20px; 
+    height: 30px;
+    background: radial-gradient(ellipse closest-side at 35% 50%,rgb(61, 125, 163)100%, rgb(255, 255, 255));
+    transform: translate(-20px, -30px);
+    border-radius: 50px/75px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(61, 125, 163);
+    z-index: 2;
+}
+.eye-right{
+    transform: translate(20px, -30px);
+}
+
+.nose{
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid rgb(61, 125, 163);
+    z-index: 2;
+}
+
+.hair-one, .hair-two, .hair-three{
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border-left: 10px solid transparent;
+    border-bottom: 20px solid rgb(61, 125, 163);
+    transform: translate(-13px, -80px);
+}
+
+.hair-two {
+    transform: translate(-3px, -83px);
+}
+
+.hair-three {
+    transform: translate(5px, -80px);
 }
