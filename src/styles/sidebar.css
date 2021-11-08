@@ -35,6 +35,7 @@
     background-color: rgb(153, 151, 151);
     color:honeydew;
     border-radius: 3px;
+    animation: 250ms ease-in 0s 1 forwards move-right;
   }
 
   .sidebar-item-header:hover {
@@ -49,6 +50,7 @@
   .sidebar-item-group{
     margin-left: 15px;
     position: relative;
+    animation: 250ms ease-in 0s 1 forwards move-right;
   }
  /* there is peace da over here */
   .sidebar-item-header-chk:checked + .sidebar-item-header + .sidebar-item-group{
@@ -143,10 +145,26 @@
   
   .sidebar-chk:checked ~ .sidebar-item-header{
     display: none;
+    /* animation: 3s ease-in-out 0s 1 forwards move-left; */
   }
   .sidebar-chk:checked ~ .sidebar-item-group{
     display: none;
+    /* animation: 3s ease-in-out 0s 1 forwards move-left; */
   }
+/* 
+  @keyframes move-left {
+    to {
+      transform: translateX(-175px);
+    }
+  }
+  @keyframes move-right {
+    from {
+      transform: translateX(-175px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } */
 
   .sidebar-item-group-btn {
     font-family: "JuraDemiBold";
